@@ -1,0 +1,408 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #555;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: white;
+}
+hr{
+    width: 150px;
+    height: 2px;
+    background-color: #2196f3;
+    border: 0;
+    margin: 40px auto;
+}
+h3.title{
+    color: #131633;
+    text-transform: capitalize;
+    font-size: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+
+/*------------------------
+HERO DIV
+--------------------------*/
+#hero{
+    background-color: gray;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('img/cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+#hero h1{
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+#hero h3{
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+#hero a.contact-me{
+color: white;
+text-decoration: none;
+padding: 20px 46px;
+border-radius: 8px;
+text-transform: uppercase;
+font-weight: bold;
+text-align: center;
+opacity: 1;
+border: 2px solid white;
+}
+#hero a.contact-me:hover{
+    background-color: #2296f3;
+}
+/*------------------------
+About DIV
+--------------------------*/
+#about{
+    padding: 10px;
+    background-color: #f7f7f7;
+    margin: 20px;
+}
+
+#about h3.title{
+    color: #131633;
+    text-transform: capitalize;
+    font-size: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+#about #details{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#about #details div.about-bio{
+    width: 100%;
+    max-width: 1000px;
+    line-height: 2;
+}
+@media(max-width :600px){
+    #about, #details{
+        flex-direction: column;
+    }
+    #about #details div.about-bio{
+        margin-top: 20px;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+}
+/*------------------------
+Gallery DIV
+--------------------------*/
+
+#gallery{
+    background-color: white;
+}
+#gallery p{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto 35px;
+    padding: 0 20px;
+    line-height: 2;
+}
+#gallery .project-one{
+    background-color: #f7f7f7;
+    margin: 20px;
+    padding: 10px;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+}
+#gallery .project-one .images .sec-one{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 10px;
+}
+#gallery .project-one .images .sec-one li img{
+    margin: 8px;
+    padding: 10px;
+    height:  500px;
+    border-radius: 3px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+#gallery .project-one .desc{
+    display: flex;
+    flex-direction: column;
+}
+#gallery .project-one .desc h4{
+    color: #131633;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-left: 50px;
+    padding: 20px;
+    text-align: left;
+}
+#gallery .project-one .desc p{
+    color: #131633;
+    padding: 20px;
+    margin-top: 15px;
+    margin-left: 50px;
+    font-size: 20px;
+    text-align: left;
+    
+}
+#gallery .project-one .tools{
+    display: flex;
+    flex-direction: row;
+}
+
+#gallery .project-one .desc .tools img{
+   
+    width: 10em;
+    height: 8em;
+    background-size: cover;
+    margin-left: 50px;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+}
+#gallery .project-one .desc .tools .view-project{
+    display: flex;
+    flex-direction: column;
+}
+#gallery .project-one .desc .tools .view-project a{
+    color: #131633;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-left: 50px;
+    padding: 20px 47px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 1;
+    border: 1.5px solid #131633;
+    }
+    #gallery .project-one .desc .tools .view-project a:hover{
+        background-color: #2296f3;
+        color: white;
+    }
+
+#gallery .project-two{
+    background-color:#f7f7f7;
+    padding: 10px;
+    margin: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#gallery .project-two .images .sec-two{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+}
+#gallery .project-two .images .sec-two li img{
+    margin: 8px;
+    padding: 10px;
+    height:  500px;
+    border-radius: 3px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+#gallery .project-two .desc{
+    display: flex;
+    flex-direction: column;
+}
+#gallery .project-two .desc h4{
+    color: #131633;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-left: 50px;
+    padding: 20px;
+    text-align: left;
+}
+#gallery .project-two .desc p{
+    color: #131633;
+    padding: 20px;
+    margin-top: 15px;
+    margin-left: 50px;
+    font-size: 20px;
+    text-align: left;
+    
+}
+#gallery .project-two .tools{
+    display: flex;
+    flex-direction: row;
+}
+#gallery .project-two .desc .tools img{
+    width: 10em;
+    height: 8em;
+    background-size: cover;
+    margin-left: 50px;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+}
+#gallery .project-two .desc .tools .view-project{
+    display: flex;
+    flex-direction: column;
+}
+#gallery .project-two .desc .tools .view-project a{
+    color: #131633;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-left: 50px;
+    padding: 20px 47px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 1;
+    border: 1.5px solid #131633;
+    }
+    #gallery .project-two .desc .tools .view-project a:hover{
+        background-color: #2296f3;
+        color: white;
+    }
+
+
+/*------------------------
+Prosses
+--------------------------*/
+ #contact {
+     padding: 10px;
+     margin: 20px;
+     background-color: #f7f7f7;
+     background-size: cover;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+ }
+ #contact .info {
+     display: flex;
+     flex-direction: column;
+ }
+ #contact .info h4{
+     color: #131633;
+ }
+ #contact .box{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ #contact .box form{
+     margin-top: 50px;
+     padding: 10px;
+     border: 2px solid #131633;
+     border-radius: 8px;
+ }
+ #contact .box form .form-control{
+     padding: 10px;
+     width: 600px;
+     background: transparent;
+     border: none;
+     outline: none;
+     border-bottom: 1px solid   #131633;;
+     color: #131633;
+     font-size: 18px;
+     margin-bottom: 10px;
+ }
+ #contact .box form  input{
+     height: 45px;
+ }
+ #contact .box form .submit{
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #131633;
+    font-size: 18px;
+    margin-top: 20px;
+     color: white;
+     background-color:#131633 ;
+     letter-spacing: 2px;
+}
+#contact .box form .submit:hover{
+    background-color: #2296f3;
+        color: white;
+        cursor: pointer;
+}
+
+/*------------------------
+FOOTER 
+--------------------------*/
+footer{
+    background-color: #131622 ;
+    padding: 60px 0;
+    color: white;
+    text-align: center;
+    background: linear-gradient( to bottom,#284e7a,#000 100%) ;
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer p {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgb(255, 255, 255,.6);
+    margin-bottom: 10px;
+}
+footer ul{
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+}
+footer ul li {
+    margin-right: 8px;
+    margin-left: 8px;
+    size: 24px;
+}
+footer ul li a{
+    font-size: 36px;
+    cursor: pointer;
+}
+/*------------------------
+RESPONSEV----------------*/
+@media(max-width :800px){
+    #hero{
+        min-height: 600px;
+    }
+    #hero h1{
+        font-size: 36px;
+    }
+    #hero h3{
+        font-size: 18px;
+    }
+    footer{
+        padding: 80px 15px;
+    }
+    #hero a.contact-me{
+        padding: 15px 40px;
+    }
+}
+@media(max-width :1000px){
+    #gallery .grid li.small,
+    #gallery .grid li.large{
+        flex-basis: 100%;
+    }
+}
