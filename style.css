@@ -82,7 +82,6 @@ About DIV
     background-color: #f7f7f7;
     margin: 20px;
 }
-
 #about h3.title{
     color: #131633;
     text-transform: capitalize;
@@ -102,21 +101,9 @@ About DIV
     max-width: 1000px;
     line-height: 2;
 }
-@media(max-width :600px){
-    #about, #details{
-        flex-direction: column;
-    }
-    #about #details div.about-bio{
-        margin-top: 20px;
-        line-height: 1.5;
-        text-align: left;
-    }
-
-}
 /*------------------------
 Gallery DIV
 --------------------------*/
-
 #gallery{
     background-color: white;
 }
@@ -140,12 +127,13 @@ Gallery DIV
     flex-direction: row;
     align-content: center;
     padding: 10px;
+    margin-top: 30px;
 }
 #gallery .project-one .images .sec-one li img{
+    width: 100%;
     margin: 8px;
     padding: 10px;
-    height:  500px;
-    border-radius: 3px;
+    height:  100%;
     background-clip: content-box;
     background-size: cover;
     background-position: center;
@@ -153,6 +141,8 @@ Gallery DIV
 #gallery .project-one .desc{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 #gallery .project-one .desc h4{
     color: #131633;
@@ -167,7 +157,7 @@ Gallery DIV
     padding: 20px;
     margin-top: 15px;
     margin-left: 50px;
-    font-size: 20px;
+    font-size:1.3vw;
     text-align: left;
     
 }
@@ -175,8 +165,14 @@ Gallery DIV
     display: flex;
     flex-direction: row;
 }
+#gallery .project-one .desc .tools .techs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
-#gallery .project-one .desc .tools img{
+#gallery .project-one .desc .tools .techs img{
    
     width: 10em;
     height: 8em;
@@ -215,7 +211,6 @@ Gallery DIV
     display: flex;
     flex-direction: row-reverse;
 }
-
 #gallery .project-two .images .sec-two{
     display: flex;
     flex-direction: row-reverse;
@@ -255,14 +250,20 @@ Gallery DIV
     display: flex;
     flex-direction: row;
 }
-#gallery .project-two .desc .tools img{
+#gallery .project-two .desc .tools .techs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#gallery .project-two .desc .tools .techs img{
     width: 10em;
     height: 8em;
     background-size: cover;
     margin-left: 50px;
     vertical-align: middle;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 #gallery .project-two .desc .tools .view-project{
     display: flex;
@@ -284,10 +285,8 @@ Gallery DIV
         background-color: #2296f3;
         color: white;
     }
-
-
 /*------------------------
-Prosses
+Contact-Me
 --------------------------*/
  #contact {
      padding: 10px;
@@ -311,14 +310,17 @@ Prosses
      align-items: center;
  }
  #contact .box form{
+    width: 60%;
+    height: 50%;
      margin-top: 50px;
      padding: 10px;
      border: 2px solid #131633;
      border-radius: 8px;
  }
+
  #contact .box form .form-control{
      padding: 10px;
-     width: 600px;
+     width: 100%;
      background: transparent;
      border: none;
      outline: none;
@@ -331,7 +333,7 @@ Prosses
      height: 45px;
  }
  #contact .box form .submit{
-    width: 600px;
+    width: 100%;
     background: transparent;
     border: none;
     outline: none;
@@ -382,7 +384,7 @@ footer ul li a{
     cursor: pointer;
 }
 /*------------------------
-RESPONSEV----------------*/
+Responsive----------------*/
 @media(max-width :800px){
     #hero{
         min-height: 600px;
@@ -399,10 +401,192 @@ RESPONSEV----------------*/
     #hero a.contact-me{
         padding: 15px 40px;
     }
-}
-@media(max-width :1000px){
-    #gallery .grid li.small,
-    #gallery .grid li.large{
-        flex-basis: 100%;
+    #about, #details{
+        flex-direction: column;
     }
+    #about #details div.about-bio{
+        margin-top: 20px;
+        line-height: 1.5;
+        text-align: left;
+    }
+    #gallery p{
+        max-width: 1000px;
+        text-align: center;
+        margin: 0 auto 20px;
+        padding: 0 20px;
+        line-height: 2;
+    }
+    #gallery .project-one{
+        background-color: #f7f7f7;
+        margin: 20px;
+        padding: 10px;
+        text-align: right;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    #gallery .project-one .images {
+        margin-left: -27px;
+    }
+    #gallery .project-one .images .sec-one{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding: 10px;
+    }
+    #gallery .project-one .images .sec-one li img{
+        width: 7em;
+        height:  10em;
+        padding-top: 0px;
+        align-items: center;
+        justify-content: center;
+        }
+        #gallery .project-one .desc{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            margin-left: -58px;
+        }
+        #gallery .project-one .desc h4{
+            color: #131633;
+            text-transform: capitalize;
+            font-size: 15px;
+            margin-left: 30px;
+            padding: 10px;            
+            text-align: left;
+        }
+        #gallery .project-one .desc p{
+            font-size: 7px;
+            color: #131633;
+            margin-top: 10px;
+            margin-left: 30px;
+            text-align: left;
+            padding: 10px
+        }
+    
+        #gallery .project-one .tools{
+            display: flex;
+            flex-direction: column;
+            margin-left: 28px;
+            align-items: flex-start;
+            margin-left: 28px
+        }
+        
+#gallery .project-one .desc .tools .techs img{
+width: 6em;
+height: 4em;
+background-size: cover;
+margin-left: 0;
+vertical-align: middle;
+display: flex;
+flex-direction: row;
 }
+#gallery .project-one .desc .tools .view-project{
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: center;
+margin-left: 50px;
+}
+#gallery .project-one .desc .tools .view-project a{
+color: #131633;
+text-decoration: none;
+margin-top: 50px;
+margin-left: 17px;
+padding: 0px 10px;
+border-radius: 8px;
+font-weight: bold;
+text-align: center;
+opacity: 1;
+ opacity: 1;
+border: 1.5px solid #131633;
+}
+#gallery .project-two{
+    background-color: #f7f7f7;
+    margin: 20px;
+    padding: 10px;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    
+}
+#gallery .project-two .images {
+    margin-left: -27px;
+}
+#gallery .project-two .images .sec-two{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 10px;
+}
+#gallery .project-two .images .sec-two li img{
+    width: 7em;
+    height:  10em;
+    padding-top: 0px;
+    align-items: center;
+    justify-content: center;
+    }
+    #gallery .project-two .desc{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-left: -58px;
+    }
+    #gallery .project-two .desc h4{
+        color: #131633;
+        text-transform: capitalize;
+        font-size: 15px;
+        margin-left: 30px;
+        padding: 10px;            
+        text-align: left;
+    }
+    #gallery .project-two .desc p{
+        font-size: 7px;
+        color: #131633;
+        margin-top: 10px;
+        margin-left: 30px;
+        text-align: left;
+        padding: 10px
+    }
+
+    #gallery .project-two .tools{
+        display: flex;
+        flex-direction: column;
+        margin-left: 28px;
+        align-items: flex-start;
+        margin-left: 28px
+    }
+    
+#gallery .project-two .desc .tools .techs img{
+width: 6em;
+height: 4em;
+background-size: cover;
+margin-left: 0;
+vertical-align: middle;
+display: flex;
+flex-direction: row;
+}
+#gallery .project-two .desc .tools .view-project{
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: center;
+margin-left: 50px;
+}
+#gallery .project-two .desc .tools .view-project a{
+color: #131633;
+text-decoration: none;
+margin-top: 50px;
+margin-left: 17px;
+padding: 0px 10px;
+border-radius: 8px;
+font-weight: bold;
+text-align: center;
+opacity: 1;
+opacity: 1;
+border: 1.5px solid #131633;
+}    
+}
+ 
